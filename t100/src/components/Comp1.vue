@@ -54,8 +54,8 @@
       </transition>
     </div>
   </div>
-</template>
-
+</template>  
+  
 <script setup>
 import { ref } from 'vue';
 import ZzButton from '/src/components/ZzButton.vue';
@@ -65,11 +65,11 @@ defineProps({
   msg: String,
 });
 
-const title = ref('hello');
+             const title = ref('hello');
 const count = ref(1);
 const showBooks = ref(true);
 
-function toggleTitle() {
+function                 toggleTitle() {
   title.value = title.value === 'hello' ? 'welcome' : 'hello';
 }
 
@@ -80,6 +80,9 @@ function toggleShowBooks() {
 </script>
 
 <style scoped>
+
+
+
 .read-the-docs {
   color: #888;
 }
@@ -100,9 +103,10 @@ function toggleShowBooks() {
   }
   100% {
     transform: scale(1);
-    transform: rotateY(180deg);
+    /* transform: rotateY(180deg); */
     transform-style: preserve-3d;
     opacity: 1;
+
   }
 }
 </style>
